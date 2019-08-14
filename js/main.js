@@ -10,8 +10,6 @@ let isInViewport = function (elem) {
     );
 }
 
-
-
 let counter = () => {
 
 
@@ -61,4 +59,36 @@ let counter = () => {
 
 }
 
+
+
+
 window.addEventListener('scroll', counter)
+window.addEventListener('load', function () {
+    new Glider(document.querySelector('.glider'), {
+        // Mobile-first defaults
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        scrollLock: true,
+        draggable: true,
+
+        responsive: [{
+
+            breakpoint: 700,
+            settings: {
+
+                slidesToShow: '2',
+                slidesToScroll: '2'
+
+            }
+        }, {
+
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                duration: 3,
+                dragVelocity: .9
+            }
+        }]
+    });
+})
