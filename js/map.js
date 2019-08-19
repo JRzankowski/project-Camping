@@ -1,7 +1,7 @@
-var map, infoWindow;
+let map, infoWindow;
 
 function createMap() {
-    var options = {
+    let options = {
         center: {
             lat: 43.654,
             lng: -79.383
