@@ -23,7 +23,7 @@
             <h1 class="logo">Camping</h1>
             <div class="big-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a style="color:#ef9632" href="contact.html">Contact</a></li>
@@ -39,7 +39,7 @@
                 </label>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a style="color:#ef9632" href="contact.html">Contact</a></li>
@@ -84,10 +84,12 @@
                         <label for="">How can we help ?</label>
                         <textarea cols="50" rows="10" type="message" placeholder="Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-submit"></button>
+                    <button type="submit" class="btn btn-submit">submit</button>
 
                 </form>
+
             </div>
+            <div id="map"></div>
         </div>
     </section>
 
@@ -103,7 +105,7 @@
             <div class="quick-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a style="color:#ef9632" href="contact.html">Contact</a></li>
@@ -123,5 +125,11 @@
         </div>
 
     </footer>
+
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-kzRIfId3mIX-efRdmQSc_y1iaKK0VvQ&callback=createMap"
+        type="text/javascript"></script>
+    <script src="/js/map.js"></script>
 
 </body>

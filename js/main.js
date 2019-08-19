@@ -1,5 +1,6 @@
 var stats = document.querySelector('section.stats .stats-item');
 let activate = true;
+var map;
 let isInViewport = function (elem) {
     var bounding = elem.getBoundingClientRect();
     return (
@@ -58,6 +59,22 @@ let counter = () => {
 
 
 }
+
+function createMap() {
+    var options = {
+        center: {
+            lat: 43.654,
+            lng: -79.383
+        },
+        zoom: 10,
+        mapTypeID: google.maps.MapTypeId.HYBRID
+    };
+    map = new google.maps.Map(document.getElementById('map'), options);
+
+}
+
+
+
 
 
 
