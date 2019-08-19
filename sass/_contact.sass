@@ -4,6 +4,15 @@
     .container-contact
         text-align: center
         padding: 0 20px
+        @media only screen and (min-width: 500px)
+            padding: 0 65px
+        @media only screen and (min-width: 700px)
+            padding: 0 135px
+        @media only screen and (min-width: 900px)
+            padding: 0 200px
+        @media only screen and (min-width: 1200px)
+            padding: 0 25%
+       
         
         h1 
             +section-title
@@ -11,25 +20,47 @@
             font-family: 'Nunito', sans-serif
             color: #8c9398
             line-height: 1.75
+            @media only screen and (min-width: 900px)
+                font-size: 1.2rem
+            @media only screen and (min-width: 1200px)
+                font-size: 1.3rem
         .contact-form 
             text-align: left
+            margin-top: 25px
             form 
+                @media only screen and (min-width: 990px)
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+
+                    
+                    
+
                 .contact-form_field
                     display: flex
                     flex-direction: column
                     text-align: left
                     margin-top: 16px
+                    @media only screen and (min-width: 990px)
+                        width: 48%
+                    
                     label 
                         letter-spacing: 1px
                         font-family: 'Nunito', sans-serif
                         font-weight: 600
                         margin-bottom: 10px
+                        @media only screen and (min-width: 900px)
+                            font-size: 1.05rem
+                        @media only screen and (min-width: 1200px)
+                            font-size: 1.3rem
                     input 
                         color: #495057
                         border: 1px solid #ced4da
                         border-radius: 4px
                         letter-spacing: 1px
                         padding: 16px
+                        @media only screen and (min-width: 1200px)
+                            font-size: .9rem
                     textarea 
                         font-family: 'Nunito', sans-serif
                         padding: 16px
@@ -37,7 +68,11 @@
                         border: 1px solid #ced4da
                         border-radius: 4px
                         letter-spacing: 1px
-                        margin-bottom: 
+                        @media only screen and (min-width: 1200px)
+                            font-size: .9rem
+                .contact-form_field.textarea
+                    width: 100%
+                        
             button 
                 font-family: 'roboto', sans-serif
                 font-size: 1rem
@@ -51,11 +86,17 @@
                 margin-top: 16px
                 border-radius: 5px
                 cursor: pointer
+                margin-bottom: 24px
+                width: auto
+                @media only screen and (min-width: 1200px)
+                        font-size: 1.2rem
+                
                 
             button:hover 
                 background-color: rgb(255, 56, 56)
     #map 
         height: 500px
+        
                     
     
                         
